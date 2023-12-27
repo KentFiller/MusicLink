@@ -1,0 +1,170 @@
+/* Style the spacer between auth input fields */
+.form-spacer {
+    margin-bottom: 10px; /* Adjust the margin as needed for spacing */
+}
+
+.h1-spacer {
+    margin-bottom: 60px;
+}
+
+.h2-spacer {
+    margin-bottom: 30px;
+}
+
+/* Styling for the registration and login forms */
+.auth-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #ddd; /* Add a border around the form */
+    padding: 20px; /* Add padding inside the form */
+    border-radius: 10px; /* Make the corners slightly rounded */
+    margin-top: 20px; /* Add a top margin to create space below the navigation bar */
+}
+
+/* Styling for the labels and input fields in the registration and login forms */
+.auth-label-container {
+    border: 2px solid #ddd; /* Create an outlined rectangle around the input fields */
+    border-radius: 5px; /* Make the corners of the rectangle slightly rounded */
+    padding: 10px; /* Add some space between the border and input fields */
+    max-width: 400px;
+}
+
+/* Styling for labels in the registration and login forms */
+label {
+    display: block; /* Display labels as block elements to stack them vertically */
+    text-align: left; /* Align text to the left of the labels */
+    margin-top: 10px; /* Add spacing above each label */
+}
+
+/* Styling for input fields in the registration and login forms */
+input {
+    width: 300px; /* Make input fields take up the full width of their container */
+    padding: 10px; /* Add padding inside input fields for spacing */
+    margin: 5px 0; /* Add margin to separate input fields */
+    border: none; /* Remove the default input border */
+    outline: none; /* Remove the default focus outline */
+}
+
+/* Styling for the submit button in the registration and login forms */
+button {
+    background-color: #4285f4; /* Set the button's background color */
+    color: #fff; /* Set the text color to white */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove the button's border */
+    border-radius: 5px; /* Make the button corners slightly rounded */
+    cursor: pointer; /* Show a pointer cursor on hover for interactivity */
+}
+
+/* Hover effect for the submit button in the registration and login forms */
+button:hover {
+    background-color: #357abf; /* Change the background color on hover */
+}
+
+/* Styling for the dashboard input field */
+.dashboard-input {
+    width: 40%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ddd; /* Add a border */
+    border-radius: 5px; /* Make the corners slightly rounded */
+    outline: none; /* Remove the default focus outline */
+}
+
+.dashboard-button,
+.dashboard .btn-primary {
+    background-color: #1DB954; /* Set the button's background color to Spotify's green */
+    color: #fff; /* Set the text color to white for contrast */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove the button's border */
+    border-radius: 5px; /* Make the button corners slightly rounded */
+    cursor: pointer; /* Show a pointer cursor on hover for interactivity */
+}
+
+.dashboard-button:hover,
+.dashboard .btn-primary:hover {
+    background-color: #24CC63; /* Change the background color on hover */
+}
+
+/* Styling for the custom button */
+.custom-button {
+    background-color: #ccc; /* Set the button's background color to grey */
+    color: #000; /* Set the text color to black */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove the button's border */
+    border-radius: 5px; /* Make the button corners slightly rounded */
+    cursor: pointer; /* Show a pointer cursor on hover for interactivity */
+    transition: background-color 0.3s; /* Add a smooth transition for the background color change */
+}
+
+.custom-button:hover {
+    background-color: #1DB954; /* Change the button's background color to Spotify's green on hover */
+    color: #fff; /* Change the text color to white for contrast on hover */
+}
+
+/* Target specific elements within the dashboard.html */
+.dashboard h2, .dashboard th, .dashboard td {
+    color: #fff; /* Set the text color to white for these elements */
+}
+
+/* Styling for the album cover image */
+.album-cover-small {
+    width: 50px;
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    margin-right: 10px; /* Adjust the margin for spacing */
+}
+
+/* Styling for the album cover inside the modal */
+.album-cover-modal {
+    max-width: 100%; /* Ensure it fits the modal */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+}
+
+.navbar {
+    background-color: #1DB954; /* Spotify's green color for the navbar */
+}
+
+.navbar a {
+    color: #191414; /* Black text color for the navbar links for contrast */
+}
+
+body {
+    background-color: #191414 !important; /* Spotify's black background color */
+    color: #fff !important; /* Set the text color to white for contrast */
+}
+
+/* Separate and style the "Title" and "Artist" headers */
+.table thead th.table-header {
+    padding: 0 100px; /* Add horizontal padding to space them out */
+    font-weight: bold; /* Make the headers bold to distinguish them */
+}
+
+/* Style the separator cell using a pseudo-element */
+.table thead th.table-separator::before {
+    display: inline-block; /* Make the separator an inline block */
+    padding: 0 10px; /* Adjust the padding to control the spacing around the separator */
+}
+
+#flash-message-alert,
+#download-alert {
+    display: none;
+}
+
+/* Style for the container div */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+}
+
+/* Style for the main content */
+main {
+    flex: 1;
+}
+
+/* Style for the footer */
+footer {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
