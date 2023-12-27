@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+  <div class="auth-form-container">
+    <h2>Register</h2>
+    <div class="h2-spacer"></div>
+    <form method="POST" action="/register">
+        {{ form.hidden_tag() }}
+        <div class="auth-label-container">
+            {{ form.username(size=20, placeholder="Username", autofocus=true) }}
+        </div>
+        <div class="form-spacer"></div>
+        <div class="auth-label-container">
+            {{ form.password(size=20, placeholder="Password") }}
+        </div>
+        <div class="form-spacer"></div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+  </div>
+{% endblock %}
