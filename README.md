@@ -3,9 +3,9 @@
  ### [YouTube Demonstration](https://youtu.be/rxRgUHNu4aU)
 
 <h2>Description</h2>
-Users can upload MP3 files created from Spotify playlists to their mobile devices using the web application MusicLink.
-Its central component is the dashboard, which houses the majority of the functions. Each function has a specific application in different areas of the dashboard. 
-There are several that handle various tasks such as obtaining songs from the provided playlist link, obtaining YouTube URLs, downloading MP3s, and sending the zip file containing the selected songs to the user's device.
+This Code Project allows users to upload MP3 files created from Spotify playlists to their devices.
+Most of the interesting code will be in the dashboard, which houses the majority of the important functions for playlist downloading. Each function has a specific application in different areas of the web app. 
+There are several that handle various tasks such as user authentication, to obtaining song data from the provided playlist link, obtaining YouTube URLs, downloading MP3s, and sending the zip file containing the chosen songs to the user's device.
 <br />
 
 
