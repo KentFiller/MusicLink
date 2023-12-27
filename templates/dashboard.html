@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="dashboard">
+    <h1>Welcome to your Dashboard</h1>
+    <div class="h1-spacer"></div>
+
+    <form method="POST">
+        <input type="text" id="dashboard_spotify_link" name="spotify_link" required autofocus placeholder="Spotify Playlist Link" class="dashboard-input">
+        <button type="submit" class="dashboard-button">Get Playlist</button>
+    </form>
+
+    {% if playlist_songs %}
+    <h2>Songs in the Playlist:</h2>
+    <div class="h2-spacer"></div>
+        <form method="POST" action="{{ url_for('download_selected_songs') }}">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="selected_songs" value="" id="select-all" onclick="toggleCheckboxes(this)">
+                                <label class="custom-control-label" for="select-all">Select All</label>
+                            </div>
+                        </th>
+                        <th class="table-header">Title</th>
+                        <th class="table-separator"></th>
+                        <th class="table-header">Artist</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for song in playlist_songs %}
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="selected_songs" value="{{ song.title }}|{{ song.artist }}" id="custom-check{{ loop.index }}">
+                                <label class="custom-control-label" for="custom-check{{ loop.index }}"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#" data-toggle="modal" data-target="#albumModal{{ loop.index }}">
+                                <img src="{{ song.album_cover_url }}" alt="Album Cover" class="album-cover album-cover-small">
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="albumModal{{ loop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <img src="{{ song.album_cover_url }}" alt="Album Cover" class="album-cover-modal">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>{{ song.title }}</td>
+                        <td>{{ song.artist }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <button id="download-button" class="custom-button" data-toggle="popover" data-content="Please select at least one song for download">
+                Download Selected Songs
+            </button>
+        </form>
+    {% endif %}
+</div>
+{% endblock %}
