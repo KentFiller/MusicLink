@@ -4,8 +4,8 @@
 
 <h2>Description</h2>
 This Code Project allows users to upload MP3 files created from Spotify playlists to their devices.
-Most of the interesting code will be in the dashboard, which houses the majority of the important functions for playlist downloading. Each function has a specific application in different areas of the web app. 
-There are several that handle various tasks such as user authentication, to obtaining song data from the provided playlist link, obtaining YouTube URLs, downloading MP3s, and sending the zip file containing the chosen songs to the user's device.
+Most of the interesting code is in the dashboard, which houses the majority of the important functions for playlist downloading. Each function has a specific application in different areas of the web app. 
+They handle tasks such as user authentication, obtaining song data from the provided playlist link, obtaining YouTube URLs, downloading MP3s, and sending the zip file containing the chosen songs to the user's device.
 <br />
 
 
