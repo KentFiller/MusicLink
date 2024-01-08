@@ -11,14 +11,14 @@ They handle tasks such as user authentication, obtaining song data from the prov
 
 <h2>Languages and Utilities Used</h2>
 
-- The project is made using Python, Flask, SQLAlchemy, HTML, CSS, and JavaScript.
-- It also uses both the Spotify and YouTube Data API.
+- Made using Python, Flask, SQLAlchemy, HTML, CSS, and JavaScript.
+- Uses both the Spotify and YouTube Data API.
 
 <h2>Environments Used </h2>
 
 - <b>VSCode Codespaces</b>
 
-<h2>Program walk-through:</h2>
+<h2>Using the program:</h2>
 
 <p align="center">
 Home Page: <br/>
